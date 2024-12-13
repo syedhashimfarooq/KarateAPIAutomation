@@ -8,5 +8,10 @@ public class TestRunner {
 	Karate getAPITest() {
 		return Karate.run("getapi").relativeTo(getClass());
 	}
+	
+	@Karate.Test
+	Karate postAPITest() {
+		return Karate.run("postapi").relativeTo(getClass());
+	}
 
 }
